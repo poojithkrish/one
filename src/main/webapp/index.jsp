@@ -3,29 +3,29 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>NexusShop · retro vibe</title>
+  <title>Forest Shop · nature inspired</title>
   <!-- Fonts & Icons -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous">
   <style>
-    /* ===== RETRO ROOT ===== */
+    /* ===== FOREST ROOT ===== */
     :root {
-      --bg: #f7f0e6;
-      --bg-card: #fffcf7;
-      --primary: #2b1e16;
-      --primary-light: #4a3428;
-      --accent: #d86a4a;
-      --accent-light: #f3d6c4;
-      --accent-dark: #b84f32;
-      --muted: #6e5e52;
-      --muted-light: #a89486;
-      --surface: #ebe1d6;
+      --bg: #eef3e8;
+      --bg-card: #fafff7;
+      --primary: #1e3a2f;
+      --primary-light: #2b5a45;
+      --accent: #4a7c59;
+      --accent-light: #c4dbc2;
+      --accent-dark: #2f5a3e;
+      --muted: #4f6b5c;
+      --muted-light: #8aa396;
+      --surface: #dce8d4;
       --success: #3b8c6e;
-      --warning: #e6b85c;
+      --warning: #d4a84b;
       --radius: 20px;
       --radius-sm: 12px;
-      --shadow: 0 6px 24px rgba(43, 30, 22, 0.08);
-      --shadow-hover: 0 16px 48px rgba(43, 30, 22, 0.12);
+      --shadow: 0 6px 24px rgba(30, 58, 47, 0.06);
+      --shadow-hover: 0 16px 48px rgba(30, 58, 47, 0.10);
       --transition: 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
       --container: 1240px;
     }
@@ -64,7 +64,7 @@
       font-size: 15px;
       transition: var(--transition);
       border: 2px solid transparent;
-      box-shadow: 0 2px 0 rgba(0,0,0,0.05);
+      box-shadow: 0 2px 0 rgba(0,0,0,0.02);
     }
     .btn-primary {
       background: var(--accent);
@@ -75,21 +75,21 @@
       background: var(--accent-dark);
       border-color: var(--accent-dark);
       transform: translateY(-3px) scale(1.02);
-      box-shadow: 0 10px 24px rgba(216, 106, 74, 0.25);
+      box-shadow: 0 10px 24px rgba(74, 124, 89, 0.25);
     }
     .btn-ghost {
-      background: rgba(255,255,255,0.12);
+      background: rgba(255,255,255,0.10);
       color: #fff;
       border-color: rgba(255,255,255,0.25);
     }
     .btn-ghost:hover {
-      background: rgba(255,255,255,0.22);
+      background: rgba(255,255,255,0.20);
       transform: translateY(-2px);
     }
     .btn-outline {
       background: transparent;
       color: var(--primary);
-      border-color: rgba(43,30,22,0.15);
+      border-color: rgba(30,58,47,0.15);
     }
     .btn-outline:hover {
       background: var(--primary);
@@ -103,11 +103,10 @@
       position: sticky;
       top: 0;
       z-index: 100;
-      background: rgba(247, 240, 230, 0.92);
+      background: rgba(238, 243, 232, 0.92);
       backdrop-filter: blur(12px);
       -webkit-backdrop-filter: blur(12px);
-      border-bottom: 3px solid var(--primary);
-      box-shadow: 0 4px 0 var(--accent-light);
+      border-bottom: 2px solid var(--primary-light);
     }
     .header-inner {
       display: flex;
@@ -125,7 +124,6 @@
       font-size: 24px;
       letter-spacing: -0.5px;
       color: var(--primary);
-      text-shadow: 2px 2px 0 var(--accent-light);
     }
     .brand .accent { color: var(--accent); }
     .brand i { font-size: 26px; color: var(--accent); }
@@ -154,7 +152,7 @@
       color: var(--primary);
       border-color: var(--accent);
       transform: scale(1.02);
-      box-shadow: 0 2px 0 var(--primary);
+      box-shadow: 0 2px 0 var(--accent-light);
     }
 
     .header-actions {
@@ -177,7 +175,7 @@
       background: var(--bg-card);
       color: var(--accent);
       border-color: var(--accent);
-      transform: scale(1.08) rotate(-4deg);
+      transform: scale(1.08) rotate(-2deg);
     }
     .cart-wrap { position: relative; }
     .cart-count {
@@ -203,13 +201,13 @@
       border-radius: 999px;
       padding: 0 16px 0 18px;
       transition: var(--transition);
-      border: 3px solid var(--primary);
+      border: 2px solid var(--primary-light);
       min-width: 200px;
     }
     .search-wrap:focus-within {
       border-color: var(--accent);
       background: #fff;
-      box-shadow: 0 0 0 4px rgba(216, 106, 74, 0.15);
+      box-shadow: 0 0 0 4px rgba(74, 124, 89, 0.12);
     }
     .search-wrap input {
       border: 0;
@@ -237,7 +235,7 @@
       font-size: 20px;
       background: var(--surface);
       color: var(--primary);
-      border: 3px solid var(--primary);
+      border: 2px solid var(--primary-light);
       transition: var(--transition);
     }
     .mobile-toggle:hover { background: var(--accent-light); }
@@ -245,7 +243,7 @@
     #mobileMenu {
       display: none;
       background: var(--bg-card);
-      border-top: 3px solid var(--primary);
+      border-top: 2px solid var(--primary-light);
       padding: 12px 0 20px;
     }
     #mobileMenu ul {
@@ -275,21 +273,20 @@
       position: relative;
       display: flex;
       align-items: center;
-      min-height: 440px;
+      min-height: 420px;
       padding: 50px 0;
       border-radius: var(--radius);
       overflow: hidden;
       margin: 20px 24px 0;
-      background: linear-gradient(145deg, #2b1e16 0%, #4a3428 100%);
-      border: 4px solid var(--primary);
-      box-shadow: 8px 8px 0 var(--accent-light);
+      background: linear-gradient(145deg, #1a2e24 0%, #2b4a3a 100%);
+      border: 2px solid var(--primary-light);
     }
     .hero::before {
       content: '';
       position: absolute;
       inset: 0;
-      background: url('https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
-      opacity: 0.25;
+      background: url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+      opacity: 0.20;
       z-index: 0;
     }
     .hero .container { position: relative; z-index: 1; }
@@ -304,22 +301,17 @@
       letter-spacing: 0.5px;
       margin-bottom: 14px;
       border: 2px solid #fff;
-      box-shadow: 3px 3px 0 var(--primary);
-      animation: wiggle 2s infinite;
-    }
-    @keyframes wiggle {
-      0%,100% { transform: rotate(-1deg); }
-      50% { transform: rotate(1deg); }
+      box-shadow: 0 2px 0 var(--primary);
     }
     .hero h1 {
       font-family: 'Playfair Display', serif;
-      font-size: 48px;
+      font-size: 46px;
       font-weight: 700;
       color: #fff;
       line-height: 1.1;
       max-width: 600px;
       margin-bottom: 14px;
-      text-shadow: 4px 4px 0 var(--accent);
+      text-shadow: 2px 4px 12px rgba(0,0,0,0.15);
     }
     .hero p {
       color: rgba(255,255,255,0.85);
@@ -348,8 +340,9 @@
       font-size: 28px;
       font-weight: 800;
       letter-spacing: -0.3px;
-      text-shadow: 2px 2px 0 var(--accent-light);
+      color: var(--primary);
     }
+    .section-header h2 i { color: var(--accent); margin-right: 8px; }
     .section-header p {
       color: var(--muted);
       margin-top: 2px;
@@ -363,7 +356,7 @@
       gap: 6px;
       font-size: 14px;
       transition: var(--transition);
-      border-bottom: 3px solid transparent;
+      border-bottom: 2px solid transparent;
     }
     .section-header .view-all:hover {
       gap: 14px;
@@ -385,12 +378,11 @@
       box-shadow: var(--shadow);
       transition: var(--transition);
       cursor: pointer;
-      border: 3px solid var(--primary);
-      box-shadow: 4px 4px 0 var(--accent-light);
+      border: 2px solid var(--primary-light);
     }
     .cat-card:hover {
       transform: translateY(-8px) scale(1.02);
-      box-shadow: 8px 8px 0 var(--accent);
+      box-shadow: var(--shadow-hover);
       border-color: var(--accent);
     }
     .cat-card .icon-wrap {
@@ -404,12 +396,12 @@
       font-size: 24px;
       color: var(--accent);
       transition: var(--transition);
-      border: 2px solid var(--primary);
+      border: 2px solid var(--primary-light);
     }
     .cat-card:hover .icon-wrap {
       background: var(--accent);
       color: #fff;
-      transform: scale(1.1) rotate(-6deg);
+      transform: scale(1.1) rotate(-4deg);
     }
     .cat-card h4 { font-size: 15px; font-weight: 700; }
     .cat-card .count { font-size: 13px; color: var(--muted); margin-top: 4px; }
@@ -428,12 +420,11 @@
       transition: var(--transition);
       display: flex;
       flex-direction: column;
-      border: 3px solid var(--primary);
-      box-shadow: 4px 4px 0 var(--accent-light);
+      border: 2px solid var(--primary-light);
     }
     .product-card:hover {
       transform: translateY(-8px) scale(1.01);
-      box-shadow: 8px 8px 0 var(--accent);
+      box-shadow: var(--shadow-hover);
       border-color: var(--accent);
     }
     .product-card .img-wrap {
@@ -441,7 +432,7 @@
       overflow: hidden;
       background: var(--surface);
       aspect-ratio: 1/1;
-      border-bottom: 3px solid var(--primary);
+      border-bottom: 2px solid var(--primary-light);
     }
     .product-card .img-wrap img {
       width: 100%;
@@ -449,7 +440,7 @@
       object-fit: cover;
       transition: 0.5s ease;
     }
-    .product-card:hover .img-wrap img { transform: scale(1.06) rotate(-1deg); }
+    .product-card:hover .img-wrap img { transform: scale(1.06); }
     .product-card .badge {
       position: absolute;
       top: 12px;
@@ -461,7 +452,6 @@
       font-size: 11px;
       font-weight: 700;
       border: 2px solid #fff;
-      box-shadow: 2px 2px 0 var(--primary);
     }
     .product-card .badge.sale {
       background: var(--warning);
@@ -480,12 +470,12 @@
       font-size: 16px;
       color: var(--muted);
       transition: var(--transition);
-      border: 2px solid var(--primary);
+      border: 2px solid var(--primary-light);
     }
     .product-card .wish-btn:hover {
       background: #fff;
       color: var(--accent);
-      transform: scale(1.12) rotate(-8deg);
+      transform: scale(1.12);
     }
     .product-card .body {
       padding: 14px 16px 8px;
@@ -553,13 +543,11 @@
       justify-content: center;
       gap: 8px;
       border: 2px solid var(--primary);
-      box-shadow: 2px 2px 0 var(--accent-light);
     }
     .product-card .footer .add-btn:hover {
       background: var(--accent);
       border-color: var(--accent);
       transform: scale(1.04);
-      box-shadow: 4px 4px 0 var(--primary);
     }
     .product-card .footer .add-btn.added {
       background: var(--success);
@@ -574,14 +562,13 @@
       border-radius: var(--radius);
       overflow: hidden;
       box-shadow: var(--shadow);
-      border: 4px solid var(--primary);
-      box-shadow: 6px 6px 0 var(--accent-light);
+      border: 2px solid var(--primary-light);
     }
     .deal-wrap .deal-img {
       flex: 0 0 46%;
       background: var(--surface);
       min-height: 280px;
-      border-right: 4px solid var(--primary);
+      border-right: 2px solid var(--primary-light);
     }
     .deal-wrap .deal-img img {
       width: 100%;
@@ -589,7 +576,7 @@
       object-fit: cover;
       transition: 0.5s;
     }
-    .deal-wrap:hover .deal-img img { transform: scale(1.02) rotate(-1deg); }
+    .deal-wrap:hover .deal-img img { transform: scale(1.02); }
     .deal-wrap .deal-content {
       flex: 1;
       padding: 36px 40px;
@@ -648,8 +635,7 @@
       border-radius: var(--radius-sm);
       min-width: 64px;
       text-align: center;
-      border: 2px solid #fff;
-      box-shadow: 3px 3px 0 var(--accent);
+      border: 2px solid var(--accent-light);
     }
     .timer-box .num {
       font-size: 24px;
@@ -672,7 +658,7 @@
       scroll-snap-type: x mandatory;
     }
     .testimonials-scroll::-webkit-scrollbar { height: 6px; }
-    .testimonials-scroll::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 999px; border: 2px solid var(--primary); }
+    .testimonials-scroll::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 999px; }
     .testimonial-card {
       flex: 0 0 320px;
       background: var(--bg-card);
@@ -681,12 +667,12 @@
       box-shadow: var(--shadow);
       scroll-snap-align: start;
       transition: var(--transition);
-      border: 3px solid var(--primary);
-      box-shadow: 4px 4px 0 var(--accent-light);
+      border: 2px solid var(--primary-light);
     }
     .testimonial-card:hover {
-      box-shadow: 8px 8px 0 var(--accent);
+      box-shadow: var(--shadow-hover);
       transform: translateY(-4px);
+      border-color: var(--accent);
     }
     .testimonial-card .stars { color: var(--warning); font-size: 16px; letter-spacing: 2px; margin-bottom: 8px; }
     .testimonial-card blockquote {
@@ -707,7 +693,7 @@
       border-radius: 50%;
       object-fit: cover;
       background: var(--surface);
-      border: 2px solid var(--primary);
+      border: 2px solid var(--primary-light);
     }
     .testimonial-card .author .name { font-weight: 700; font-size: 14px; }
     .testimonial-card .author .role { font-size: 13px; color: var(--muted); }
@@ -723,14 +709,12 @@
       justify-content: space-between;
       gap: 28px;
       flex-wrap: wrap;
-      border: 4px solid var(--accent);
-      box-shadow: 8px 8px 0 var(--accent-light);
+      border: 2px solid var(--accent-light);
     }
     .newsletter-wrap .text h3 {
       font-size: 26px;
       font-weight: 800;
       margin-bottom: 2px;
-      text-shadow: 2px 2px 0 var(--accent);
     }
     .newsletter-wrap .text p { opacity: 0.8; font-size: 15px; }
     .newsletter-wrap form {
@@ -745,9 +729,9 @@
       min-width: 180px;
       padding: 14px 20px;
       border-radius: 999px;
-      border: 3px solid #fff;
+      border: 2px solid #fff;
       font-size: 15px;
-      background: rgba(255,255,255,0.10);
+      background: rgba(255,255,255,0.08);
       color: #fff;
       transition: var(--transition);
       outline: none;
@@ -755,14 +739,14 @@
     .newsletter-wrap form input::placeholder { color: rgba(255,255,255,0.5); }
     .newsletter-wrap form input:focus {
       background: rgba(255,255,255,0.18);
-      border-color: var(--accent);
+      border-color: var(--accent-light);
     }
     .newsletter-wrap form .btn {
       background: var(--accent);
       color: #fff;
       border-color: var(--accent);
       padding: 14px 32px;
-      border: 3px solid #fff;
+      border: 2px solid #fff;
     }
     .newsletter-wrap form .btn:hover {
       background: var(--accent-dark);
@@ -780,7 +764,7 @@
     footer {
       margin-top: 16px;
       padding: 40px 0 24px;
-      border-top: 4px solid var(--primary);
+      border-top: 2px solid var(--primary-light);
     }
     .footer-grid {
       display: grid;
@@ -813,12 +797,12 @@
       color: var(--muted);
       transition: var(--transition);
       font-size: 16px;
-      border: 2px solid var(--primary);
+      border: 2px solid var(--primary-light);
     }
     .footer-grid .brand-col .socials a:hover {
       background: var(--accent);
       color: #fff;
-      transform: translateY(-4px) rotate(-6deg);
+      transform: translateY(-4px);
       border-color: var(--accent);
     }
     .footer-grid .col h5 {
@@ -827,6 +811,7 @@
       margin-bottom: 10px;
       text-transform: uppercase;
       letter-spacing: 0.5px;
+      color: var(--primary);
     }
     .footer-grid .col ul {
       list-style: none;
@@ -847,7 +832,7 @@
     .footer-bottom {
       text-align: center;
       padding-top: 18px;
-      border-top: 3px solid var(--primary);
+      border-top: 2px solid var(--primary-light);
       color: var(--muted-light);
       font-size: 13px;
     }
@@ -862,7 +847,7 @@
       .hero h1 { font-size: 36px; }
       .hero { min-height: 360px; margin: 16px 16px 0; padding: 36px 0; }
       .deal-wrap { flex-direction: column; }
-      .deal-wrap .deal-img { flex: 0 0 200px; border-right: 0; border-bottom: 4px solid var(--primary); }
+      .deal-wrap .deal-img { flex: 0 0 200px; border-right: 0; border-bottom: 2px solid var(--primary-light); }
       .deal-wrap .deal-content { padding: 28px 28px; }
       .newsletter-wrap { padding: 28px 24px; flex-direction: column; text-align: center; }
       .newsletter-wrap form { max-width: 100%; }
@@ -922,8 +907,8 @@
         <i class="fas fa-bars"></i>
       </button>
       <a class="brand" href="#">
-        <i class="fas fa-store-alt"></i>
-        <span>Nexus<span class="accent">Shop</span></span>
+        <i class="fas fa-tree"></i>
+        <span>Forest<span class="accent">Shop</span></span>
       </a>
     </div>
 
@@ -973,9 +958,9 @@
   <!-- HERO -->
   <section class="hero" aria-label="Hero">
     <div class="container">
-      <div class="badge"><i class="fas fa-sparkles"></i> New Collection 2026</div>
-      <h1>Retro finds <br>for modern souls</h1>
-      <p>Curated vintage vibes, tech & accessories — free shipping on first order.</p>
+      <div class="badge"><i class="fas fa-leaf"></i> New Collection 2026</div>
+      <h1>Nature's finest <br>for your life</h1>
+      <p>Curated organic goods, tech & accessories — free shipping on first order.</p>
       <div class="actions">
         <button class="btn btn-primary" id="shopNow"><i class="fas fa-arrow-right"></i> Shop Now</button>
         <button class="btn btn-ghost" id="exploreDeals"><i class="fas fa-clock"></i> Explore Deals</button>
@@ -988,8 +973,8 @@
     <div class="container">
       <div class="section-header">
         <div>
-          <h2>Browse Categories</h2>
-          <p>Find your retro treasure</p>
+          <h2><i class="fas fa-seedling"></i> Browse Categories</h2>
+          <p>Find your forest treasure</p>
         </div>
         <a href="#" class="view-all">All <i class="fas fa-arrow-right"></i></a>
       </div>
@@ -1002,8 +987,8 @@
     <div class="container">
       <div class="section-header">
         <div>
-          <h2>Trending Now</h2>
-          <p>What's hot — retro picks</p>
+          <h2><i class="fas fa-fire"></i> Trending Now</h2>
+          <p>What's hot — forest picks</p>
         </div>
         <a href="#" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
       </div>
@@ -1016,7 +1001,7 @@
     <div class="container">
       <div class="section-header">
         <div>
-          <h2>⚡ Flash Deal</h2>
+          <h2><i class="fas fa-bolt"></i> Flash Deal</h2>
           <p>Grab it before it's gone</p>
         </div>
       </div>
@@ -1027,7 +1012,7 @@
         <div class="deal-content">
           <span class="tag"><i class="fas fa-bolt"></i> Limited Offer</span>
           <h3>MacBook Air M2</h3>
-          <p class="desc">Thin, light, incredibly powerful — retro future.</p>
+          <p class="desc">Thin, light, incredibly powerful — forest green edition.</p>
           <div>
             <span class="price-big">$999 <span class="old">$1,199</span></span>
           </div>
@@ -1049,8 +1034,8 @@
     <div class="container">
       <div class="section-header">
         <div>
-          <h2>What Our Customers Say</h2>
-          <p>Real reviews, real retro</p>
+          <h2><i class="fas fa-star"></i> What Our Customers Say</h2>
+          <p>Real reviews, real nature</p>
         </div>
       </div>
       <div class="testimonials-scroll" id="testimonialsList"></div>
@@ -1062,8 +1047,8 @@
     <div class="container">
       <div class="newsletter-wrap">
         <div class="text">
-          <h3>Stay in the Loop</h3>
-          <p>Exclusive offers & retro drops</p>
+          <h3><i class="fas fa-envelope"></i> Stay in the Loop</h3>
+          <p>Exclusive offers & forest drops</p>
         </div>
         <form id="newsletterForm" onsubmit="return false;">
           <input type="email" id="newsletterEmail" placeholder="Enter your email" aria-label="Email" required />
@@ -1080,8 +1065,8 @@
   <div class="container">
     <div class="footer-grid">
       <div class="brand-col">
-        <div class="brand"><i class="fas fa-store-alt"></i> <span>Nexus<span class="accent">Shop</span></span></div>
-        <p>Modern e‑commerce with a retro soul. Quality products, seamless experience.</p>
+        <div class="brand"><i class="fas fa-tree"></i> <span>Forest<span class="accent">Shop</span></span></div>
+        <p>Modern e‑commerce with a natural soul. Quality products, seamless experience.</p>
         <div class="socials">
           <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
           <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
@@ -1093,7 +1078,7 @@
       <div class="col"><h5>Support</h5><ul><li><a href="#">Help Center</a></li><li><a href="#">Shipping</a></li><li><a href="#">Returns</a></li><li><a href="#">Contact</a></li></ul></div>
       <div class="col"><h5>Legal</h5><ul><li><a href="#">Privacy</a></li><li><a href="#">Terms</a></li><li><a href="#">Cookies</a></li></ul></div>
     </div>
-    <div class="footer-bottom">&copy; <span id="year"></span> NexusShop. All rights reserved.</div>
+    <div class="footer-bottom">&copy; <span id="year"></span> ForestShop. All rights reserved.</div>
   </div>
 </footer>
 
@@ -1291,7 +1276,7 @@
       newsletterMsg.style.display = 'block';
       return;
     }
-    newsletterMsg.textContent = '🎉 Thanks for subscribing!';
+    newsletterMsg.textContent = '🌿 Thanks for subscribing!';
     newsletterMsg.style.color = '#a8e6cf';
     newsletterMsg.style.display = 'block';
     newsletterEmail.value = '';
@@ -1314,7 +1299,7 @@
     }
   });
 
-  console.log('🚀 NexusShop — retro animated e‑commerce loaded.');
+  console.log('🌲 ForestShop — nature inspired e‑commerce loaded.');
 </script>
 </body>
 </html>
